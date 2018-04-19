@@ -69,14 +69,14 @@ page = "" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
-# codepen = ""
 # email = "pbar1@users.noreply.github.com"
 # facebook = ""
 github = "pbar1"
 gitlab = "pbar"
+codepen = "pbar1"
+twitter = "pbar_"
 # instagram = ""
 linkedin = "cpbartine"
-twitter = "pbar_"
 # telegram = ""
 # google_scholar = "qc6CJjYAAAAJ"
 
