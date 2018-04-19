@@ -3,6 +3,7 @@ title: About
 description: Who I am
 menu: main
 weight: -210
+comments: false
 ---
 
 My name is Pierce Bartine. I'm a programmer working in Austin, Texas for Clear Measure. My goal is to become [pretty good][1] at whatever currently has my attention. There are so many disparate bodies of knowledge out there that I can't help but want to [connect them][2]! Really, I just love learning, (mostly) regardless of the topic.
