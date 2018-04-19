@@ -22,7 +22,7 @@ enableEmoji = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Where I write about stuff"
+description = "Where I write"
 title404 = "I am Error"
 
 [params.assets]

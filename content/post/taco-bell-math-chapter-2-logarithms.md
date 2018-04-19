@@ -1,19 +1,19 @@
 ---
 title: Taco Bell Math, Chapter 2 - Logarithms
 date: 2018-04-17
-description: 
+description: From Baja Blast to the complex plane, logarithms are more than meets the eye
 tags:
   - math
 mathjax: true
 cover:
   image: /images/logrhythms.jpg
-  caption: Nature decided the cross section of a log should look exactly like the plot of Log. Does that count as a homonym?
+  caption: If you squint, it looks kinda like the graph of Log(z) from above
   style: full
 ---
 
 _Yes I know chapter 1 hasn't been written yet. But that hasn't been a problem [for a while now][1]._
 
-With the amount of math Euler created, he must've pulled a proportionately large number of late nights; I think it's safe to say he would've been quite the Taco Bell conniseur. But that only begs the question - what would his favorite order have been? That may or may not be what this post uncovers, in fact, that question didn't even cross my mind until sitting down to write it. Let's agree that our boy Lenny's favorite order is currently in _superposition_, and this post may or may not collapse that longstanding wavefunction. This post is starting to feel a bit recursive...
+With the amount of math Euler created, he must've pulled a proportionately large number of late nights; I think it's safe to say he would've been quite the Taco Bell conniseur. But that only begs the question - what would his favorite order have been? Now _that_ is a [tough one][5].
 
 Anyway, I was at Taco Bell with a good friend of mine when we got to talking about the beauty of the [Euler product formula][2] and its proof. It reads:
 
@@ -33,16 +33,22 @@ Pierce :: What do you think the runtime of that is?
 
 In other words, mapping the natural numbers \\( \to \\) lists of their factors. After arguing over the superiority of the natural vs. binary logarithm, our intuitions told us the runtime was \\( O(n\log{n}) \\); however, we never proved that rigorously. Leave a comment if you've got one!
 
-But all this talk of logarithms got me thinking..._what the hell even is a logarithm?_
+> Logarithm: the number of times you must divide a number by a base, until that number goes to 1
 
-_To be continued..._
+> For example: \\( \log_2{8} = 3 \\) is like \\( 8/2/2/2 = 1 \\)
 
-<!-- interactive plot of 2D map of logarithm x vs base -->
-<!-- explain and comment on complex logarithms -->
-<!-- complex log conformal map looks like a vanishing point -->
-<!-- what if for the above: you're in the middle of the sphere, and you only see one hemisphere? -->
-<!-- modular forms are hiding in somewhere in here... -->
+Eventually I found myself researching [complex logarithms][3]. For a complex number \\( z = re^{i\theta} \\), there are infinitely many outputs of \\( \ln{z} \\) that all differ by integer multiples of \\( 2\pi i \\), which gives the plot below a sort of "height". In the complex domian, the logarithm looks much weirder than it does over the reals - it resembles a spiral staircase, like that one in Super Mario 64, except without the steps:
+
+<!-- TODO: interactive plot of 2D map of logarithm x vs base -->
+{{% center %}}
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Riemann_surface_log.svg/791px-Riemann_surface_log.svg.png" alt="Complex logarithm" width="350">
+{{% /center %}}
+
+It was fun researching and learning about the complex logarithm; to know there is so much more hiding within such an elementary function is exciting. [What else could be hiding beneath the surface?][4]
 
 
 [1]: https://www.google.com/search?q=when+was+special+relativity+published
 [2]: https://en.wikipedia.org/wiki/Proof_of_the_Euler_product_formula_for_the_Riemann_zeta_function
+[3]: https://en.wikipedia.org/wiki/Complex_logarithm
+[4]: https://en.wikipedia.org/wiki/Modular_form
+[5]: https://en.wikipedia.org/wiki/Millennium_Prize_Problems
