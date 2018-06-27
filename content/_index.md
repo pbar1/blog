@@ -3,7 +3,7 @@ title: Home
 menu: main
 weight: -270
 ---
-> I insist upon the view that **all is waves**
+> **All is waves**
 > — Erwin Schrödinger
 
 {{% center %}}
