@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+sitemap: https://pbar.me/sitemap.xml
