@@ -7,7 +7,7 @@ const Wrapper = styled.header`
   background: linear-gradient(
     45deg,
     ${props => darken(0.1, props.theme.colors.primary)},
-    ${props => lighten(0.1, props.theme.colors.primary)}
+    ${'#6aeff1'}
   );
   grid-column: 1 / -1;
   margin-left: -1rem;

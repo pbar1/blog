@@ -8,7 +8,8 @@ import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from 'components';
 import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
 import '../utils/prismjs-theme.css';
-import ReactUtterences from 'react-utterances'
+import 'katex/dist/katex.min.css';
+import ReactUtterences from 'react-utterances';
 
 const Content = styled.article`
   grid-column: 2;

@@ -1,6 +1,6 @@
 ---
 date: 2018-06-26
-title: QBism - The Map Is Not the Territory
+title: QBism
 category: "Physics"
 ---
 
