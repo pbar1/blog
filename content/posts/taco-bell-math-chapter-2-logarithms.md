@@ -23,13 +23,11 @@ An infinite sum over the naturals ends up equalling _a product over the primes_.
 
 Then, the computer scientists in us revealed themselves:
 
-{{< convo sep=":" >}}
 
 Chris :: You know what would be more interesting: how many times would a number that's already been exluded have been hit?
 
 Pierce :: What do you think the runtime of that is?
 
-{{< /convo >}}
 
 In other words, mapping the natural numbers \\( \to \\) lists of their factors. After arguing over the superiority of the natural vs. binary logarithm, our intuitions told us the runtime was \\( O(n\log{n}) \\); however, we never proved that rigorously. Leave a comment if you've got one!
 
@@ -40,9 +38,7 @@ In other words, mapping the natural numbers \\( \to \\) lists of their factors. 
 Eventually I found myself researching [complex logarithms][3]. For a complex number \\( z = re^{i\theta} \\), there are infinitely many outputs of \\( \ln{z} \\) that all differ by integer multiples of \\( 2\pi i \\), which gives the plot below a sort of "height". In the complex domian, the logarithm looks much weirder than it does over the reals - it resembles a spiral staircase, like that one in Super Mario 64, except without the steps:
 
 <!-- TODO: interactive plot of 2D map of logarithm x vs base -->
-{{% center %}}
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Riemann_surface_log.svg/791px-Riemann_surface_log.svg.png" alt="Complex logarithm" width="350">
-{{% /center %}}
 
 It was fun researching and learning about the complex logarithm; to know there is so much more hiding within such an elementary function is exciting. [What else could be hiding beneath the surface?][4]
 

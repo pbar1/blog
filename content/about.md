@@ -10,9 +10,7 @@ My name is Pierce Bartine. I'm a programmer working in Austin, Texas for Clear M
 
 Outside of that, I'm also a swimmer (visualizing swimming data got me into programming). I like the water - pools, beaches, lakes - you name it. :ocean:
 
-{{% center %}}
 <img src="/images/portrait.jpg" width="350">
-{{% /center %}}
 
 
 [1]: https://intenseminimalism.com/2015/where-are-the-polymaths-hiding/
