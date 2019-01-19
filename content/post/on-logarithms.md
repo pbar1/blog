@@ -2,7 +2,7 @@
 title = "On Logarithms"
 date = "2018-04-17"
 author = "Pierce Bartine"
-description = "From Baja Blast to the complex plane, logarithms are more than meets the eye"
+description = "Logarithms are way more interesting beneath the surface"
 tags = ["math"]
 lastmod = "2019-01-18"
 +++
@@ -17,11 +17,8 @@ An infinite sum over the naturals ends up equalling _a product over the primes_.
 
 Then, the computer scientists in us revealed themselves:
 
-
-Chris :: You know what would be more interesting: how many times would a number that's already been exluded have been hit?
-
-Pierce :: What do you think the runtime of that is?
-
+- You know what would be more interesting: how many times would a number that's already been exluded have been hit?
+- What do you think the runtime of that is?
 
 In other words, mapping the natural numbers \\( \to \\) lists of their factors. After arguing over the superiority of the natural vs. binary logarithm, our intuitions told us the runtime was \\( O(n\log{n}) \\); however, we never proved that rigorously. Leave a comment if you've got one!
 

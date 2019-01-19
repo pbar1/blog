@@ -1,5 +1,5 @@
 +++
-title = "Analyzing a Codebase Before Refactoring"
+title = "Analyzing a Codebase"
 date = "2017-10-31"
 author = "Pierce Bartine"
 description = "Some interesting metrics to run on source text before compilation"

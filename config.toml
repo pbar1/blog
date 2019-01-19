@@ -11,11 +11,10 @@ paginate = 5
   defaultTheme = "light"
 
 [params.logo]
-  logoText = "./pbar.me"
+  logoText = "bat pbar.me"
   # or
-  #
-# path = "/img/your-example-logo.svg"
-# alt = "Your example logo alt text"
+  # path = "/images/logo.png"
+  # alt = "Your example logo alt text"
 
 [menu]
   # [[menu.main]]
