@@ -17,8 +17,9 @@ learning, ([mostly][4]) regardless of the topic.
 
 Though a chemical engineer on paper, exposure to Arch Linux at an early
 age pretty much sealed my fate. I'm a loyal fan of the kernel, but I've
-been known to stay into Apple land from time to time. As part of my
-everything-as-code initiative, check out my [dotfiles][5] and [resume][6].
+been known to stray into the Apple orchard occasionally. Check out my
+[dotfiles][5] and [resume][6], they're part of my everything-as-code
+initiative.
 
 Outside of that, I'm a swimmer; visualizing swimming data sucked me
 into the coding world. I also like to float rivers and go [exploring][7].

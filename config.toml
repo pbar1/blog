@@ -2,7 +2,7 @@ baseurl = "https://pbar.me/"
 languageCode = "en-us"
 title = "pbar"
 theme = "hello-friend"
-copyright = ""
+copyright = "© 2019 Pierce Bartine"
 paginate = 5
 
 [params]
@@ -12,12 +12,11 @@ paginate = 5
 
 [params.logo]
   logoText = "bat pbar.me"
-  # or
   # path = "/images/logo.png"
   # alt = "Your example logo alt text"
 
-[menu]
-  # [[menu.main]]
-  #   identifier = "about"
-  #   name = "About"
-  #   url = "/about"
+# [menu]
+#   [[menu.main]]
+#     identifier = "about"
+#     name = "About"
+#     url = "/about"
