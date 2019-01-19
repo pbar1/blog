@@ -6,7 +6,7 @@ copyright = ""
 paginate = 5
 
 [params]
-  subtitle = "Pierce Bartine's blog"
+  subtitle = "Pierce's blog"
   # "light" or "dark"
   defaultTheme = "light"
 

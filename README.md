@@ -1,4 +1,4 @@
-# Pierce's personal blog
+# Pierce's blog
 
 My personal blog, built with Hugo and deployed with Netlify
 
@@ -25,7 +25,7 @@ git subtree pull --prefix themes/hello-friend theme-hello-friend master --squash
 
 Add forked theme as remote
 ```sh
-git remote add theme-hello-friend-pbar1 ssh://git@github.com/pbar1/hugo-theme-hello-friend.git
+git remote add theme-hello-friend-pbar1 ssh://git@github.com:pbar1/hugo-theme-hello-friend.git
 ```
 
 Push changes to forked theme (added to Makefile)

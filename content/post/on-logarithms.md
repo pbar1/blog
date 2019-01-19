@@ -4,6 +4,7 @@ date = "2018-04-17"
 author = "Pierce Bartine"
 description = "From Baja Blast to the complex plane, logarithms are more than meets the eye"
 tags = ["math"]
+lastmod = "2019-01-18"
 +++
 
 With the amount of math Euler created, he must've pulled a proportionately large number of late nights; I think it's safe to say he would've been quite the Taco Bell conniseur. But that only begs the question...what would his go-to order have been? That's a [tough one][5].
