@@ -2,7 +2,7 @@ baseurl = "https://pbar.me/"
 languageCode = "en-us"
 title = "pbar"
 theme = "hello-friend"
-copyright = "© 2019 Pierce Bartine"
+copyright = "All is waves — Schrödinger"
 paginate = 5
 
 [params]

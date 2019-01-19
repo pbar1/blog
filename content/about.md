@@ -26,8 +26,6 @@ into the coding world. I also like to float rivers and go [exploring][7].
 Mathematics interests me greatly; I find a sense of beauty in the raw
 idea-ness of pure math.
 
-> _All is waves_ — Schrödinger
-
 {{< figure src="/images/primfuji.png"
   alt="Primordial Mt. Fuji"
   position="center"
