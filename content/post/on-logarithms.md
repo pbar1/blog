@@ -1,19 +1,12 @@
----
-title: Taco Bell Math, Chapter 2 - Logarithms
-date: 2018-04-17
-description: From Baja Blast to the complex plane, logarithms are more than meets the eye
-tags:
-  - math
-mathjax: true
-cover:
-  image: /images/logrhythms.jpg
-  caption: If you squint, it looks kinda like the graph of Log(z) from above
-  style: full
----
++++
+title = "On Logarithms"
+date = "2018-04-17"
+author = "Pierce Bartine"
+description = "From Baja Blast to the complex plane, logarithms are more than meets the eye"
+tags = ["math"]
++++
 
-_Yes I know chapter 1 hasn't been written yet. But that hasn't been a problem [for a while now][1]._
-
-With the amount of math Euler created, he must've pulled a proportionately large number of late nights; I think it's safe to say he would've been quite the Taco Bell conniseur. But that only begs the question - what would his favorite order have been? Now _that_ is a [tough one][5].
+With the amount of math Euler created, he must've pulled a proportionately large number of late nights; I think it's safe to say he would've been quite the Taco Bell conniseur. But that only begs the question...what would his go-to order have been? That's a [tough one][5].
 
 Anyway, I was at Taco Bell with a good friend of mine when we got to talking about the beauty of the [Euler product formula][2] and its proof. It reads:
 
@@ -23,13 +16,11 @@ An infinite sum over the naturals ends up equalling _a product over the primes_.
 
 Then, the computer scientists in us revealed themselves:
 
-{{< convo sep=":" >}}
 
 Chris :: You know what would be more interesting: how many times would a number that's already been exluded have been hit?
 
 Pierce :: What do you think the runtime of that is?
 
-{{< /convo >}}
 
 In other words, mapping the natural numbers \\( \to \\) lists of their factors. After arguing over the superiority of the natural vs. binary logarithm, our intuitions told us the runtime was \\( O(n\log{n}) \\); however, we never proved that rigorously. Leave a comment if you've got one!
 
@@ -40,9 +31,7 @@ In other words, mapping the natural numbers \\( \to \\) lists of their factors. 
 Eventually I found myself researching [complex logarithms][3]. For a complex number \\( z = re^{i\theta} \\), there are infinitely many outputs of \\( \ln{z} \\) that all differ by integer multiples of \\( 2\pi i \\), which gives the plot below a sort of "height". In the complex domian, the logarithm looks much weirder than it does over the reals - it resembles a spiral staircase, like that one in Super Mario 64, except without the steps:
 
 <!-- TODO: interactive plot of 2D map of logarithm x vs base -->
-{{% center %}}
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Riemann_surface_log.svg/791px-Riemann_surface_log.svg.png" alt="Complex logarithm" width="350">
-{{% /center %}}
 
 It was fun researching and learning about the complex logarithm; to know there is so much more hiding within such an elementary function is exciting. [What else could be hiding beneath the surface?][4]
 

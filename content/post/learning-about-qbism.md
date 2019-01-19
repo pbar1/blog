@@ -1,16 +1,11 @@
----
-title: QBism - The Map Is Not the Territory
-date: 2018-06-26
-description: It's all about gathering evidence and updating your beliefs
-tags:
-  - physics
-  - philosophy
-mathjax: true
-cover:
-  image: https://pmcvariety.files.wordpress.com/2017/03/rosencrantz-and-guildenstern-are-dead-daniel-radcliffe.jpg?w=1000&h=563&crop=1
-  caption: If a coin flipped tails 100 times in a row, would you trust it? [[Variety](https://variety.com/2017/legit/reviews/rosencrantz-and-guildenstern-are-dead-review-daniel-radcliffe-1202002686/)]
-  style: normal
----
++++
+title = "On QBism"
+date = "2018-06-26"
+author = "Pierce Bartine"
+description = "Aka Quantum Bayesianism, it's all about gathering evidence and updating your beliefs"
+tags = ["physics", "philosophy"]
+lastmod = "2019-01-18"
++++
 
 I recently had the pleasure of reading [_QBism - The Future of Quantum Physics_][1] by Hans Christian von Bayer, after stumbling upon the topic through [this blog post by Wired][2]. Though I've taken to listening to audiobooks or reading on my iPad, Reading a physical copy of this book was quite enjoyable. I felt focused and undisturbed, and the weight of the hardcover binding gave me the feeling I was reading something real. As for the ideas contained within the little yellow book, Professor von Bayer's style of writing is crisp and enjoyable. He does not delve into any math, instead opting to devote all of his inktime to the subjective interpretation of quantum theory. Needless to say, I really liked the book.
 

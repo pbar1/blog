@@ -1,10 +1,10 @@
----
-title: Analyzing a Codebase Before Refactoring
-date: 2017-10-31
-description: A quick script to run before building from source
-tags:
-  - software
----
++++
+date = "2017-10-31"
+description = "A quick script to run before building from source"
+tags = ["software"]
+title = "Analyzing a Codebase Before Refactoring"
+
++++
 
 _Originally posted for [Clear Measure](https://www.clear-measure.com/)_
 
