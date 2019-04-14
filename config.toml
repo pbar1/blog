@@ -11,7 +11,7 @@ paginate = 5
   defaultTheme = "light"
 
 [params.logo]
-  logoText = "bat pbar.me"
+  logoText = "nc -vklc 'cat /dev/urandom'"
   # path = "/images/logo.png"
   # alt = "Your example logo alt text"
 

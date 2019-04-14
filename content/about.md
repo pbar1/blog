@@ -7,15 +7,13 @@ menu = "main"
 weight = -210
 +++
 
-(That's [not a typo][1])
-
 My name is Pierce Bartine. I'm an SRE working in Palo Alto, California
 for Salesforce. My goal is to become [good][2] at whatever currently has
 my attention; there are so many disparate bodies of knowledge out there
 that I can't help but want to [connect them][3]! Really, I just love
 learning, ([mostly][4]) regardless of the topic.
 
-Though a chemical engineer on paper, exposure to Arch Linux at an early
+Though a chemical engineer on paper, exposure to Linux at an early
 age pretty much sealed my fate. I'm a loyal fan of the kernel, but I've
 been known to stray into the Apple orchard occasionally. Check out my
 [dotfiles][5] and [resume][6], they're part of my everything-as-code

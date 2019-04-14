@@ -11,7 +11,7 @@ Terraform is a great tool by Hashicorp that allows teams to keep track of their 
 
 Security groups in AWS are simply lists of rules (topping out at 50 rules per group) that can whitelist traffic according to port, CIDR block, and most interestingly other security groups' IDs. For example, one could envison an RDS cluster with a security group called `rds-sg` attached to it, and an Autoscaling group with one called `rds-client-sg` attached to it. In this scenario, `rds-sg` has rules allowing traffic in from each client security group identified by their ID as opposed to CIDR block/IP range. This provides better observability when troubleshooting connectivity issues as well as flexibility when writing Terraform. Security groups are stateful, meaning that any traffic allowed in is also allowed back out.
 
-When perusing the Terraform docs, one my notice that there are two ways to provision security group resources:
+When perusing the Terraform docs, one may notice that there are two ways to provision security group resources:
 
 - `aws_security_group` with rules defined inline
 - `aws_security_group` + `aws_security_group_rule`
