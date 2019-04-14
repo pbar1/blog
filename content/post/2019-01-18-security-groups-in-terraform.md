@@ -3,8 +3,9 @@ title = "Security Groups in Terraform"
 date = "2019-01-18"
 author = "Pierce Bartine"
 description = "There are two ways to define AWS security groups in Terraform, and they are not equal"
-tags = ["software", "devops"]
+tags = ["software", "devops", "terraform"]
 lastmod = "2019-01-18"
+slug = "security-groups-in-terraform"
 +++
 
 Terraform is a great tool by Hashicorp that allows teams to keep track of their infrastructure's state and manage it declaratively in code. One of its biggest use cases is in managing the ever-increasing amount of AWS resources, one of which is the bread and butter of cloud networking: the *security group*.

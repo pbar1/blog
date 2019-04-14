@@ -5,6 +5,7 @@ author = "Pierce Bartine"
 description = "Some interesting metrics to run on source text before compilation"
 tags = ["software"]
 lastmod = "2019-01-18"
+slug = "analyzing-a-codebase"
 +++
 
 _Originally posted for [Clear Measure](https://www.clear-measure.com/)_
