@@ -8,12 +8,26 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ### DEMO - https://hugo-hello-friend.now.sh/
 
+---
+
+- [Features](#features)
+- [Built-in shortcodes](#built-in-shortcodes)
+- [Code highlighting](#code-highlighting)
+- [How to start](#how-to-start)
+- [How to configure](#how-to-configure)
+- [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
+- [Add-ons](#add-ons)
+- [How to run your site](#how-to-run-your-site)
+- [How to edit the theme](#how-to-edit-the-theme)
+- [How to contribute](#how-to-contribute)
+- [Hello Friend theme user?](#hello-friend-theme-user)
+- [Licence](#licence)
+
 ## Features
 
 - **dark/light mode**, depending on your preferences (dark is default, but you can change it)
-- great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
+- great reading experience thanks to [**Inter font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-- an easy way to modify the theme (**Webpack, NodeJS, PostCSS etc.**)
 - fully responsive
 
 #### Built-in shortcodes
@@ -22,6 +36,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
   - eg: `{{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}`
 - **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**
   - eg: `{{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}`
+- **`imgproc`** Hugo shortcode for image processing. More info at [https://gohugo.io/content-management/image-processing/](https://gohugo.io/content-management/image-processing/)
 
 #### Code highlighting
 
@@ -56,37 +71,76 @@ $ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/h
 The theme doesn't require any advanced configuration. Just copy:
 
 ```
-baseurl = "https://example.org/"
+baseurl = "/"
 languageCode = "en-us"
-title = "Hello Friend"
 theme = "hello-friend"
-copyright = ""
 paginate = 5
 
 [params]
-  subtitle = "A simple theme for Hugo"
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
   # "light" or "dark"
   defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+  # Show reading time in minutes for posts
+  showReadingTime = false
 
-[params.logo]
-  logoText = "hello friend"
-  # or
-  #
-# path = "/img/your-example-logo.svg"
-# alt = "Your example logo alt text"
+[languages]
+  [languages.en]
+    title = "Hello Friend"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
 
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-  [[menu.main]]
-    identifier = "showcase"
-    name = "Showcase"
-    url = "/showcase"
+    [languages.en.params.logo]
+      logoText = "hello friend"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
 ```
 
-to `config.toml` file in your Hugo root directory and change params fields.
+to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/8f9b363e358aaa33f6d353c77feee959).
+
+**NOTE:** Please keep in mind that currently main menu doesn't support nesting.
+
+## How to add a cover image to your posts
+
+Adding a cover image to your post is simple and there are two options when you edit your `index.md` file in `content/posts/blog-entry-xy/index.md`:
+
+* Use `cover = "/path/to/absolute/img.jpg"` to link an absolute image
+  * Resulting in `https://www.yourpage.com/path/to/absolute/img.jpg`
+* Use `cover = "img.jpg"` and `useRelativeCover = true` to link the image relative to the blog post folder
+  * Resulting in `https://www.yourpage.com/posts/blog-entry-xy/img.jpg`
+
+## Add-ons
+
+- **Archive** — Theme has built-in `archive` page for main content (see `contentTypeName` variable in config). If you need archive on your blog just copy https://github.com/panr/hugo-theme-hello-friend/blob/master/exampleSite/content/archive.md to your `content` dir. If you need multilangual archives, duplicate `content/archive.md` and add `.Lang` variable, eg: `content/archive.pl.md` (remember to change `url` in duplicated file).
+- **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/panr/hugo-theme-terminal/blob/master/layouts/partials/comments.html.
+- **Prepended `<head>`** — if you need to add something inside `<head>` element, and before any of the theme's `<script>` and `<link>` tags are declared, please take a look at `layouts/partial/prepended_head.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/prepended_head.html
+- **Extended `<head>`** — if you need to add something inside `<head>` element, after all of all of the theme's `<script>` and `<link>` tags are declared, please take a look at `layouts/partial/extended_head.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_head.html
+- **Extended `<footer>`** — if you need to add something before end of `<body>` element, please take a look at `layouts/partial/extended_footer.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_footer.html
 
 ## How to run your site
 
@@ -100,7 +154,9 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 
 ## How to edit the theme
 
-If you really want to edit the theme, you need to install Node dependencies. To do this, go to the theme directory (from your Hugo root directory):
+If you have to override some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
+
+Otherwise, if you really want to edit the theme, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
 
 ```
 $ cd themes/hello-friend
@@ -118,8 +174,12 @@ $ yarn
 
 If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-theme-hello-friend/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/panr/hugo-theme-hello-friend/pulls).
 
+## `Hello Friend` theme user?
+
+I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/panr/hugo-theme-hello-friend/blob/master/USERS.md)! 🤗
+
 ## Licence
 
 Copyright © 2019 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
-The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-hello-friend.git/blob/master/LICENSE.md) for additional licensing information.
+The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-hello-friend/blob/master/LICENSE.md) for additional licensing information.
