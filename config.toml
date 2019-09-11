@@ -1,22 +1,32 @@
-baseurl = "https://pbar.me/"
+baseurl = "https://bartine.dev/"
 languageCode = "en-us"
-title = "pbar"
 theme = "hello-friend"
-copyright = "All is waves — Schrödinger"
 paginate = 5
 
 [params]
-  subtitle = "Pierce's blog"
-  # "light" or "dark"
-  defaultTheme = "light"
+  defaultTheme = "dark"
+  showReadingTime = true
 
 [params.logo]
-  logoText = "nc -vklc 'cat /dev/urandom'"
-  # path = "/images/logo.png"
-  # alt = "Your example logo alt text"
 
-# [menu]
-#   [[menu.main]]
-#     identifier = "about"
-#     name = "About"
-#     url = "/about"
+
+[languages]
+  [languages.en]
+    title = "Pierce Bartine"
+    subtitle = "Blog"
+    keywords = "software"
+    copyright = "All is waves — Schrödinger"
+    menuMore = "Show more"
+    writtenBy = "By"
+    readMore = "Read"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.en.params.logo]
+      path = "/images/logo.png"
+      alt = "Bartine"
+      logoHomeLink = "/"
