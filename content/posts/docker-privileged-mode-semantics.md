@@ -26,7 +26,7 @@ The implications here are purely for Docker, which is an option (and as of this 
 
 _Capabilities_ are a feature in the Linux kernel that allow for finer-grained control over what a process can do. It is meant to be an alternative for providing a process with blanket root access if only a subset of privileges is required. [A list of capabilities may be found here][1].
 
-Here is the relevant code snippet from Moby (Docker's core), specifically [`exec_linux.go:25`][2]:
+Here is the relevant code snippet from Moby (Docker's core), specifically [exec_linux.go:25][2]:
 ```go
 	if ec.Privileged {
 		if p.Capabilities == nil {
@@ -111,7 +111,7 @@ Relevant snippet on clearing `/sys` read only, from Moby's [oci_linux.go:693][5]
 
 AppArmor, seccomp, and SELinux are Linux kernel security modules that allow for even greater policy enforcement. This is a deep topic meriting its own discussion. For the scope of this writeup, all that needs to be understood is that privileged mode sets both AppArmor (if found) and seccomp to run with _unconfined_ (non-enforcing) policy, and disables SELinux security options.
 
-Relevant code snippet for AppArmor, from Moby's [`oci_linux.go:129`][3]:
+Relevant code snippet for AppArmor, from Moby's [oci_linux.go:129][3]:
 ```go
 // WithApparmor sets the apparmor profile
 func WithApparmor(c *container.Container) coci.SpecOpts {
