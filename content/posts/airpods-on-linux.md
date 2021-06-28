@@ -1,10 +1,10 @@
 +++
 title = "Debugging AirPods on Linux"
-date = "2021-07-27"
+date = "2021-06-27"
 author = "Pierce Bartine"
 description = "Getting AirPods bluetooth audio working on Arch Linux"
 tags = ["software", "linux", "arch"]
-lastmod = "2021-07-27"
+lastmod = "2021-06-27"
 +++
 
 Documenting the process I used to get Bluetooth audio working on my Linux laptop. You're welcome, future me.
