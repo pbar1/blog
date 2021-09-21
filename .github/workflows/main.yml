@@ -6,6 +6,9 @@ on:
       - master  # Set a branch name to trigger deployment
   pull_request:
 
+env:
+  HUGO_BASEURL: "https://pbar1.github.io/pbar.me"
+
 jobs:
   deploy:
     runs-on: ubuntu-20.04
