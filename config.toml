@@ -17,7 +17,7 @@ enableRobotsTXT = true
 #disqusShortname = "XXX"
 
 # Google Analytics
-#googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-110140117-1"
 
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
@@ -41,7 +41,14 @@ ipv6ready = false
 # css = ["css/fonts.css"]
 
 [params.comments]
-enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+enable = true  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+# Implemented with a partial taken from https://github.com/cntrump/hugo-notepadium/pull/61
+[params.comments.utterances]
+repo = "pbar1/pbar.me"
+issueTerm = "pathname"
+label = "utterances"
+theme = "photon-dark"
 
 [params.share]
 enable = false  # En/Disable share globally, default: false. You can always enable share on per page.
