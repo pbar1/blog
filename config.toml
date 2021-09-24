@@ -1,5 +1,5 @@
 baseURL = "https://pbar.me"
-title = "Pierce Bartine's blog"
+title = "Pierce Bartine"
 theme = "hugo-notepadium"
 copyright = "© 2021 Pierce Bartine"
 
@@ -48,7 +48,7 @@ enable = true  # En/Disable comments globally, default: false. You can always en
 repo = "pbar1/pbar.me"
 issueTerm = "pathname"
 label = "utterances"
-theme = "photon-dark"
+theme = "preferred-color-scheme"
 
 [params.share]
 enable = false  # En/Disable share globally, default: false. You can always enable share on per page.
