@@ -77,7 +77,7 @@ params:
     - name: gitlab
       url: https://gitlab.com/pbar
     - name: linkedin
-      url: https://www.linkedin.com/in/cpbartine
+      url: https://www.linkedin.com/in/pbar
     - name: RsS
       url: index.xml
 
