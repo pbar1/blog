@@ -1,9 +1,11 @@
+const author = 'Pierce Bartine'
+
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'pbar.dev',
-  author: 'Pierce Bartine',
-  headerTitle: 'Pierce Bartine',
-  description: "Pierce Bartine's personal blog",
+  title: author,
+  author,
+  headerTitle: author,
+  description: `${author}'s personal blog`,
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://pbar.dev',
