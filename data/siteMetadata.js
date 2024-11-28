@@ -6,7 +6,7 @@ const siteMetadata = {
   description: "Pierce Bartine's personal blog",
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://pbar1.github.io/blog/blog',
+  siteUrl: 'https://pbar.dev',
   siteRepo: 'https://github.com/pbar1/blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
